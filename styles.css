@@ -1,0 +1,90 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: #F5F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+h1{
+    text-align: center;
+    color: transparent;
+    font-size: 3rem;
+    text-shadow: 1px 1px 5px #4b4b4959;
+}
+
+.Calculator-container{
+    border: 10px solid #728D92;
+    border-radius: 20px;
+    background-color: #F5F6F6;
+    padding: 2rem;
+    max-width: 15%;
+}
+
+.input-div{
+    display: flex;
+    gap: 1.7rem;
+    
+}
+
+#input-field{
+    font-size: 2rem;
+    min-height: 3rem;
+    width: 100%;
+    border-radius: 5px;
+    border: transparent;
+    padding: .4em;
+    background-color: #728D92;
+    color: #fcfcfc;
+}
+
+
+
+.buttons-div{
+    display: flex;
+    margin-top: 1rem;
+    max-width: 98%;
+    /* background-color: rgb(53, 143, 98); */
+}
+
+.numbers{
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+.number-buttons{
+    min-width: 4.7em;
+    min-height: 4.5em;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #AFC1C4;
+    transition: transpose .5s ease;
+}
+
+.operation-buttons{
+    min-width: 4.7em;
+    min-height: 4.5em;
+    border-radius: 10px;
+    border: transparent;
+    background-color: #AFC1C4;
+    transition: transpose .5s ease;
+}
+
+.operations{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    justify-content: end;
+    transition: transpose .5s ease;
+}
+
+.number-buttons:hover, #input-btn:hover, .operation-buttons:hover{
+    transform: scale(1.1); 
+    transition-duration: 1s; 
+}
